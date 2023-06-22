@@ -1,0 +1,159 @@
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* 
+SPACING 
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+@font-face {
+  font-family: RobotoCondensed;
+  src: url(assets/roboto-condensed.light.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: EconomicaBold;
+  src: url(assets/economica-bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "RobotoCondensed", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #000;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 800;
+  color: lightgray;
+  transition: all 0.5s;
+}
+
+.nav-link:hover {
+  color: rgba(211, 211, 211, 0.536);
+}
+
+.section {
+  padding: 9.6rem;
+}
+
+.profile-img {
+  height: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "EconomicaBold", sans-serif;
+}
+
+h1 {
+  font-size: 6.2rem;
+  line-height: 6.2rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 5.2rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2.4rem;
+}
+
+a {
+  font-size: 1.6rem;
+}
+
+button {
+  font-size: 1.6rem;
+  padding: 1.5rem 4rem;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+}
+
+.md-margin {
+  margin: 2rem;
+}
+
+/* Animations */
+.fade-anim {
+  opacity: 0;
+}
+
+.fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+  animation-duration: 2s;
+}
+.fade-in {
+  opacity: 100;
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
